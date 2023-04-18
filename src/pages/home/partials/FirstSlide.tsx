@@ -54,7 +54,7 @@ const FirstSlide = ({ className }: FirstSlideProps) => {
           </div>
         </div>
         <div className="absolute bottom-[16px] right-[132px]">
-          <Animation watching={isObserved} animation={[{ name: "fadeInDown", duration: "1s", delay: "1.6s" }]}>
+          <Animation watching={isObserved} animation={[{ name: "fadeIn", duration: "1s", delay: "1.6s" }]}>
             <img src={DoorPng} alt="" />
           </Animation>
         </div>
