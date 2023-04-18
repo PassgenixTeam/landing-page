@@ -5,6 +5,7 @@ type AnimationItem = {
   duration?: string;
   timingFunction?: string;
   delay?: string;
+  direction?: string;
 };
 
 type AnimationProps = {
@@ -46,7 +47,7 @@ export default function Animation({
     const currentAnimation = animation[currentAnimationIndex];
     if (!currentAnimation) return;
 
-    const { name, duration, timingFunction, delay } = currentAnimation;
+    const { name, duration, timingFunction, delay, direction } = currentAnimation;
 
     container.style.animationPlayState = "paused";
     container.style.animationName = "none";
@@ -58,6 +59,9 @@ export default function Animation({
     container.style.animationDuration = duration || "1s";
     container.style.animationDelay = delay || "0s";
     container.style.animationTimingFunction = timingFunction || "ease-out";
+    console.log(direction);
+
+    container.style.animationDirection = direction || "normal";
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentAnimationIndex]);

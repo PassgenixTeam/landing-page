@@ -5,7 +5,6 @@ import ThirdSlide from "./partials/ThirdSlide";
 import FourthSlide from "./partials/FourthSlide";
 import FifthSlide from "./partials/FifthSlide";
 import Footer from "./partials/Footer";
-import { randomImg } from "../../utils/tools.util";
 
 const Home = () => {
   return (
